@@ -5,9 +5,10 @@ public:
         unordered_map<int,int> u;
         vector<int> v;
         unordered_set<int> help;
-
         for(auto i : v2) u[i] = 0;
+
         for(auto i : v1){
+            
             auto it = u.find(i);
             if(it == u.end()){
                 help.insert(i);

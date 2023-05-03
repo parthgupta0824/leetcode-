@@ -5,6 +5,7 @@ public:
         int l = findans(root->left,ans);
         int r = findans(root->right,ans);
         if(l<0)l=0;if(r<0)r=0;
+        
         ans = max(ans,max(root->val,max(root->val+r,max(root->val+l,l+r+root->val))));
         return max(l,r)+root->val;
     }

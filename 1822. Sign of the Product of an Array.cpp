@@ -6,6 +6,7 @@ public:
         int cnt =0;
         for(auto i : v){
             if(i < 0)cnt++;
+            
         }
         if(cnt %2 == 0)return 1;
         return -1;
